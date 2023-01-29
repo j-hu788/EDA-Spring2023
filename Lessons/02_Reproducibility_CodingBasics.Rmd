@@ -75,10 +75,8 @@ Below is a chunk of R code. You can run R code in several ways:
 # Basic math
 1 + 1
 1 - 1
-2 * 2
-1 / 2
-1 / 200 * 30
-5 + 2 * 3
+
+
 (5 + 2) * 3
 
 # Common terms
@@ -93,8 +91,8 @@ median(5, 4, 6, 4, 6)
 # Conditional statements
 4 > 5
 4 < 5
-4 != 5
-4 == 5
+4 != 5 # compare different
+4 == 5 # compare equal
 
 ```
 
