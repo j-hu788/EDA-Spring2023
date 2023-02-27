@@ -175,8 +175,8 @@ print(NvsP)
 NvsP2 <-
   ggplot(PeterPaul.chem.nutrients, aes(x = tp_ug, y = tn_ug, color = depth, shape = lakename)) +
   geom_point(alpha = 0.7, size = 2.5) +
-  #labs() + # change your legend labels here
-  scale_shape_manual(values = c(15, 17)) +
+  labs(color="Depth", shape="Lake Name") + # change your legend labels here
+  scale_shape_manual(values = c(15, 17)) + # change the shape 
   #scale_color_distiller(palette = "Blues", direction = 1) + # use scale_color_brewer for discrete variables
   scale_color_viridis(option = "magma", direction = -1) +
   theme(legend.position = "right", 
@@ -208,8 +208,8 @@ A useful guide for aligning plots by axis can be found here: https://wilkelab.or
 ```{r, fig.height = 7, fig.width = 6}
 #install.packages("cowplot")
 library(cowplot)
-plot_grid(NvsP2, Nutrientplot, nrow = 2, align = 'h', rel_heights = c(1.25, 1))
-
+plot_grid(NvsP2, Nutrientplot, nrow = 2, align = 'h', rel_heights = c(1, 1))
+# rel_heights () is to adjust the space of plots
 ```
 
 ### Saving plots
