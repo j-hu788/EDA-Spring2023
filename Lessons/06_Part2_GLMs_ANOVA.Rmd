@@ -17,6 +17,7 @@ editor_options:
 
 library(tidyverse)
 #install.packages("agricolae")
+#install.packages("htmltools")
 library(agricolae)   #you may need to install/update package "htmltools" before installing and loading agricolae
 library(here)
 here()
@@ -88,6 +89,7 @@ summary(Litter.Totals.anova2)
 
 # Checking model fit and assumptions
 # ANOVA is robust against departures from normality.
+
 plot(Litter.Totals.anova2)
 
 # Post-hoc test
